@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h2>Waifus</h2>
+        <p><%= tagline %></p>
+        <ul>
+            <% mascots.forEach(function(mascot) { %>
+                <li>
+                    <strong><%= mascot.name %></strong>
+                    representing <%= mascot.organization %>, born <%= mascot.birth_year %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0de36ad8-fa25-4faf-8c8e-72f64bd1eb13/dbaot4r-036d9bf6-3dae-4e05-9de6-82f422f3f555.png/v1/fill/w_1024,h_1572,q_80,strp/snow_miku_2017_by_dmarichanb_dbaot4r-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNTcyIiwicGF0aCI6IlwvZlwvMGRlMzZhZDgtZmEyNS00ZmFmLThjOGUtNzJmNjRiZDFlYjEzXC9kYmFvdDRyLTAzNmQ5YmY2LTNkYWUtNGUwNS05ZGU2LTgyZjQyMmYzZjU1NS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.u-HsdHIwBG6s9yWITQqv11GWX8g5LTQ5f12c___60Y8" alt="MikuWaifu" style="width:500px;height:600px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2m2j8L359UdgwEc53v2EHmXVf4wjzZrgbA&usqp=CAU" alt="Chizuru" style="width:500px;height:600px;">
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
+
